@@ -21,6 +21,7 @@ export const Button = styled.Pressable({
 	flexDirection: 'row',
 	justifyContent: 'center',
 	alignItems: 'center',
+	width: 90,
 });
 
 export const ButtonText = styled.Text({

@@ -55,12 +55,12 @@ const Users: React.FC = () => {
 	function renderFooter() {
 		return (
 			<Footer currentPage={currentPage} totalPages={totalPages}>
-				{currentPage && currentPage > 1 && (
+				{currentPage && currentPage > 1 && !loading && (
 					<Button onPress={handlePreviousPage}>
 						<ButtonText>Previous</ButtonText>
 					</Button>
 				)}
-				{totalPages && totalPages > 1 && currentPage !== totalPages && (
+				{totalPages && totalPages > 1 && currentPage !== totalPages && !loading && (
 					<Button onPress={handleNextPage}>
 						<ButtonText>Next</ButtonText>
 					</Button>
@@ -75,7 +75,7 @@ const Users: React.FC = () => {
 
 	return (
 		<Container>
-			{users && !loading ? (
+			{!loading && users ? (
 				<FlatList
 					data={users}
 					style={flatList.style}
