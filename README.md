@@ -8,6 +8,8 @@ Antes de continuar, clone o repositório:
 git clone https://github.com/adrielfabricio/scale-exercise-1
 ```
 
+**OBS.: Para funcionamento da API e do App, deve-se abrir um terminal para cada uma das pastas, isto é, em um terminal estará rodando a API e em outro estará rodando o metro do App.**
+
 ## Rodando a API
 
 Antes de rodar a API, acesse o diretório `backend/`. Feito isso, siga os passos a seguir:
@@ -48,7 +50,16 @@ yarn
 npm i
 ```
 
-**2. Rodar aplicação no Android ou iOS**
+**2. Criar .env**
+Faça uma copia do `.env.example` e renomei esta para `.env`, nela tera a variável `API_URL=`, atribua o valor da URL da API à esta variável da seguinte forma:
+
+```bash
+API_URL="http://192.168.17.19:8000"
+```
+
+O valor pode variar de acordo com o IP da rede local.
+
+**3. Rodar aplicação no Android ou iOS**
 
 ```bash
 # para android
@@ -58,7 +69,7 @@ yarn android
 yarn ios
 ```
 
-**3. Iniciar metro**
+**4. Iniciar metro**
 
 ```bash
 yarn start
