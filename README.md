@@ -51,6 +51,7 @@ npm i
 ```
 
 **2. Criar .env**
+
 Faça uma copia do `.env.example` e renomei esta para `.env`, nela tera a variável `API_URL=`, atribua o valor da URL da API à esta variável da seguinte forma:
 
 ```bash
